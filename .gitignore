@@ -59,6 +59,3 @@ buck-out/
 /ios/Pods/
 node_modules
 
-package-lock.json
-ios/podfile.lock
-ios/Bookmark.xcodeproj/project.pbxproj
