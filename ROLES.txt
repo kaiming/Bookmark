@@ -1,4 +1,5 @@
 Zack - Backend setup, backend design, app functionality
-Ming - app functionality, documentation, testing?
+Ming - Frontend, app functionality/logic
 Toluwa - Frontend design + app functionality
 Kian - Frontend design + implementation
+All - testing, documentation
