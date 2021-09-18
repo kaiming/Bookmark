@@ -63,7 +63,7 @@ UI Components (top to bottom):
     - Filter options: Only in past year, Only in past month, Asia, Africa, Europe, North America, South America, Oceania
 
 - Table of cells
-    - # of cells = # of guests signed to that bookmark
+    - Num of cells = # of guests signed to that bookmark
     - Within each cell:
         - “Name of Guest & Date” text label in top left
         - “Review” text label underneath
@@ -112,7 +112,7 @@ UI Components (top to bottom):
     - When clicked, bring up pop up filter page
     - Filter options: Only in past year, Only in past month, Asia, Africa, Europe, North America, South America, Oceania
 - Table of cells
-    - # of cells = # of liked places
+    - Num of cells = # of liked places
     - Within each cell:
         - “Name of Guest & Date” text label in top left
         - “Review” text label underneath
@@ -133,7 +133,7 @@ UI Components (top to bottom):
     - When clicked, bring up pop up filter page
     - Filter options: Only in past year, Only in past month, Asia, Africa, Europe, North America, South America, Oceania
 - Table of cells
-    - # of cells = # of total signed places
+    - Num of cells = # of total signed places
     - Within each cell:
         - “Name of Guest & Date” text label in top left
         - “Review” text label underneath
