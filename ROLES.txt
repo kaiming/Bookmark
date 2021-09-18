@@ -1,5 +1,24 @@
-Zack - Backend setup, backend design, app functionality
-Ming - Frontend, app functionality/logic
-Toluwa - Frontend design + app functionality
-Kian - Frontend design + implementation
-All - testing, documentation
+------------------
+Zack
+------------------
+Backend setup, backend design, app functionality = Login / Create Account pages (auth pages) + Home page
+
+------------------
+Ming
+------------------
+Frontend, app functionality/logic = Profile Page
+
+------------------
+Toluwa
+------------------
+Frontend design + app functionality = Listing Page + New Bookmark Page
+
+------------------
+Kian
+------------------
+Frontend design + implementation
+
+------------------
+All
+------------------
+testing, documentation
