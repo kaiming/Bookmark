@@ -6,7 +6,7 @@ Backend setup, backend design, app functionality = Login / Create Account pages 
 ------------------
 Ming
 ------------------
-Frontend, app functionality/logic = Profile Page
+Frontend, app functionality/logic = Profile Page + History Page + Liked Page
 
 ------------------
 Toluwa
