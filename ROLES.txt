@@ -6,7 +6,7 @@ Backend setup, backend design, app functionality = Login / Create Account pages 
 ------------------
 Ming
 ------------------
-Frontend, app functionality/logic = Profile Page + History Page + Liked Page
+Frontend, app functionality/logic = History Page + Liked Page
 
 ------------------
 Toluwa
@@ -16,7 +16,7 @@ Frontend design + app functionality = Listing Page + New Bookmark Page
 ------------------
 Kian
 ------------------
-Frontend design + implementation
+Frontend design + implementation = Profile Page
 
 ------------------
 All
