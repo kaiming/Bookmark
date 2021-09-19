@@ -1,3 +1,66 @@
+import * as React from 'react';
+import Login from './screens/Login';
+import Home from './screens/Home';
+import Profile from './screens/Profile';
+import auth from '@react-native-firebase/auth';
+
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+// Tab Icons
+/*
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome' 
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+*/
+
+export default function App() {
+  const [authenticated, setAuthenticated] = React.useState(false);
+  
+  const Tab = createBottomTabNavigator();
+
+  auth().onAuthStateChanged((user) => {
+    if (user) {
+      setAuthenticated(true);
+    } else {
+      setAuthenticated(false);
+    }
+  });
+
+  const createUser = (email, password) => {
+    try {
+      auth().createUserWithEmailAndPassword(email, password);
+    } catch (error) {
+      alert(error);
+    }
+  };
+
+  const signin = (email, password) => {
+    try {
+      auth().signInWithEmailAndPassword(email, password);
+    } catch (error) {
+      alert(error);
+    }
+  };
+
+  if (authenticated) {
+    return (
+      <NavigationContainer>
+        <Tab.Navigator>
+          <Tab.Screen name="Home" component={Home} />
+          <Tab.Screen name="Profile" component={Profile} />
+        </Tab.Navigator>
+      </NavigationContainer>
+    );
+  }
+
+  return (
+    <NavigationContainer>
+      <Login signin={signin} createUser={createUser} />
+    </NavigationContainer>
+  );
+}
+
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -6,7 +69,8 @@
  * @flow strict-local
  */
 
-import React from 'react';
+/*
+import React, { useState, useEffect } from 'react';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -25,6 +89,41 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+import auth from '@react-native-firebase/auth';
+
+function LoginApp() {
+  // Set an initializing state whilst Firebase connects
+  const [initializing, setInitializing] = useState(true);
+  const [user, setUser] = useState();
+
+  // Handle user state changes
+  function onAuthStateChanged(user) {
+    setUser(user);
+    if (initializing) setInitializing(false);
+  }
+
+  useEffect(() => {
+    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+    return subscriber; // unsubscribe on unmount
+  }, []);
+
+  if (initializing) return null;
+
+  if (!user) {
+    return (
+      <View>
+        <Text>Login</Text>
+      </View>
+    );
+  }
+
+  return (
+    <View>
+      <Text>Welcome {user.email}</Text>
+    </View>
+  );
+}
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -66,6 +165,7 @@ const App: () => Node = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <LoginApp />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -110,3 +210,4 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+*/
