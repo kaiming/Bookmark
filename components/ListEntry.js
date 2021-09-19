@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const ListEntry = () => {
+const ListEntry = (prop) => {
 
     return (
         <View style={styles.container}>
             <View style={styles.titleView}>
                 <View style={{flex: 1}}>
-                    <Text style={styles.name}>John Green</Text>
+                    <Text style={styles.name}>{prop.name}</Text>
                 </View>
                 <View style={{flex: 1}}>
                     <Text style={styles.date}>Mar 2021</Text>
