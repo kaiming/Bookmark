@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1018227969610",
+    "firebase_url": "https://bookmark-htn2021-default-rtdb.firebaseio.com",
+    "project_id": "bookmark-htn2021",
+    "storage_bucket": "bookmark-htn2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018227969610:android:1f092ac52f3d6f26f260b3",
+        "android_client_info": {
+          "package_name": "com.bookmark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018227969610-5ntb1oj9m7brh6i5kgenr3i85cv0vvap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhcov4DTaX4BExyTHU5SnLipJAguG0ieA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018227969610-5ntb1oj9m7brh6i5kgenr3i85cv0vvap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
